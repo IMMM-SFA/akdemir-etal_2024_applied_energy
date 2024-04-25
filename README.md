@@ -6,8 +6,8 @@ _your zenodo badge here_
 
 Kerem Ziya Akdemir<sup>1\*</sup>, Kendall Mongird<sup>2</sup>, Jordan D. Kern<sup>1</sup>, Konstantinos Oikonomou<sup>2</sup>, Nathalie Voisin<sup>2,3</sup>, Casey D. Burleyson<sup>2</sup>, Jennie S. Rice<sup>2</sup>, Mengqi Zhao<sup>2</sup>, Cameron Bracken<sup>2</sup>, and Chris Vernon<sup>2</sup>
 
-<sup>1 </sup> North Carolina State University, Raleigh, NC, USA
-<sup>2 </sup> Pacific Northwest National Laboratory, Richland, WA, USA
+<sup>1 </sup> North Carolina State University, Raleigh, NC, USA   
+<sup>2 </sup> Pacific Northwest National Laboratory, Richland, WA, USA  
 <sup>3 </sup> University of Washington, Seattle, WA, USA
 
 \* corresponding author: kakdemi@ncsu.edu
