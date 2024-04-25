@@ -44,24 +44,15 @@ Akdemir, K. Z., Mongird, K., Kern, J. D., Oikonomou, K., Voisin, N., Burleyson, 
 | reV | v0.8.7 | https://github.com/NREL/reV | https://doi.org/10.5281/zenodo.10794962 |
 
 ## Reproduce my experiment
-Fill in detailed info here or link to other documentation that is a thorough walkthrough of how to use what is in this repository to reproduce your experiment.
+Clone this repository to get access to the scripts used to execute GO WEST and TEP simulations for this experiment. These scripts are located in the `workflow` directory and described below. First of all, you need to download the exact GO WEST version (https://doi.org/10.5281/zenodo.11003229) and TEP version (https://doi.org/10.5281/zenodo.11003185) used in this experiment. Also, you need to download all input data specified above (https://doi.org/10.57931/2338087). Then, you need to copy and paste CERF and reV, TELL and GCAM-USA inputs to GO WEST model to "Model_setup\IM3_interactions\CERF\CERF_outputs", "Model_setup\IM3_interactions\TELL\TELL_outputs", and "Model_setup\IM3_interactions\GCAM\GCAM_outputs" folders in GO WEST model, respectively. You will start by setting the years in `Experiment_wrapper.py` according to `Experiment_flowchart.pptx` file. These will provide you with job folders of GO WEST with varying years and input data. For the 2019 base case, you need to run `WECCDataSetup_multimodel.py` and `wrapper_simple_multimodel.py` in order to get GO WEST results. For the remaining simulations with transmission expansion, you need to copy and paste relevant GO WEST job folders to "Datasets\GO_data" in TEP model. After that, the next step is using `Model_setup.py` with the years and interregional transmission investment cost penalties outlined in the journal reference. This will provide you with job folders of TEP for different transmission expansion scenarios. In order to gather the investment for each scenario/year, move forward with running `TEP_simulation.py`. TEP results include a "line_params.csv" file, which you can directly copy and paste into relevant GO WEST folders to update the transmission line capacities. The last step is to run `WECCDataSetup_multimodel.py` and `wrapper_simple_multimodel.py` for the scenarios with transmission expansion in order to get GO WEST results with TEP integration.
 
-
-1. Install the software components required to conduct the experiement from [Contributing modeling software](#contributing-modeling-software)
-2. Download and install the supporting input data required to conduct the experiement from [Input data](#input-data)
-3. Run the following scripts in the `workflow` directory to re-create this experiment:
-
-| Script Name | Description | How to Run |
+| Script Number | Script Name | Description |
 | --- | --- | --- |
-| `step_one.py` | Script to run the first part of my experiment | `python3 step_one.py -f /path/to/inputdata/file_one.csv` |
-| `step_two.py` | Script to run the last part of my experiment | `python3 step_two.py -o /path/to/my/outputdir` |
-
-4. Download and unzip the output data from my experiment [Output data](#output-data)
-5. Run the following scripts in the `workflow` directory to compare my outputs to those from the publication
-
-| Script Name | Description | How to Run |
-| --- | --- | --- |
-| `compare.py` | Script to compare my outputs to the original | `python3 compare.py --orig /path/to/original/data.csv --new /path/to/new/data.csv` |
+| 1 | `Experiment_wrapper.py` | Creates GO WEST simulation folders by utilizing specific years of CERF, TELL, GCAM-USA, reV, hydropower data, and climate/socioeconomic scenario |
+| 2 | `WECCDataSetup_multimodel.py` | Creates WECC_data.dat file which contains all necessary inputs to run GO WEST model |
+| 3 | `wrapper_simple_multimodel.py` | Initiates GO WEST simulation after specifying the number of days to run and the optimization solver to use |
+| 4 | `Model_setup.py` | Creates TEP simulation folders with respect to a specific transmission expansion year and an interregional transmission investment cost penalty |
+| 5 | `TEP_simulation.py` | Initiates TEP simulation after specifying the yearly transmission investment budget and optimization solver to use |
 
 ## Reproduce my figures
 Use the scripts found in the `figures` directory to reproduce the figures used in this publication.
@@ -75,9 +66,9 @@ Use the scripts found in the `figures` directory to reproduce the figures used i
 | 5 | `Annual_genmix_WECC.py`, `TPR_demand_gen_barplot.py` | Shows annual generation mix of U.S. Western Interconnection and generation/demand under different scenarios for three TPRs in 2019 |
 | 6 | `Heatwave_outcomes_timeseries.py` | Shows LMPs and unserved energy during local and widespread heat waves under different scenarios in 2019 |
 | 7 | `Transmission_additions.py` | Shows transmission capacity additions under different scenarios between 2015 and 2055 |
-| 8 | `Generator_map_capacity_bubble.py` | Shows generator locations, capacities and total capacity by generation type for 2015 and 2055 |
+| 8 | `Generator_map_capacity_bubble.py` | Shows generator locations, capacities, and total capacity by generation type for 2015 and 2055 |
 | 9 | `LMP_ECDF_distribution.py` | Shows ECDF of LMPs for U.S. Western Interconnection and three TPRs in 2059 |
 | 10 | `Annual_genmix_WECC.py`, `TPR_demand_gen_barplot.py` | Shows annual generation mix of U.S. Western Interconnection and generation/demand under different scenarios for three TPRs in 2059 |
 | 11 | `Heatwave_outcomes_timeseries.py` | Shows LMPs and unserved energy during local and widespread heat waves under different scenarios in 2059 |
 | 12 | `Heatwave_maps_LMP.py` | Shows nodal average LMPs during local and widespread heat waves under different scenarios in 2059 |
-| 13 | `Power_flow_map.py` | Shows average interregional power flow as well as net demands, imports, solar/wind generation and curtailment and LMP distributions during local and widespread heat waves and the whole year |
+| 13 | `Power_flow_map.py` | Shows average interregional power flow as well as net demands, imports, solar/wind generation and curtailment, and LMP distributions during local and widespread heat waves and the whole year |
