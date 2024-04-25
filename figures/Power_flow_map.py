@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-# import descartes
 import geopandas as gpd
 from shapely.geometry import Point, Polygon
 import matplotlib as mpl

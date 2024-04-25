@@ -1,0 +1,18 @@
+In order to run the models and visualization scripts, you would need to install the following Python packages:
+- os
+- shutil
+- pathlib
+- sys
+- pandas
+- numpy
+- geopandas 
+- shapely
+- geopy
+- pyomo
+- datetime
+- matplotlib
+- seaborn
+- networkx
+- yaml
+
+Also, in order to initiate the optimization step, you would need to install either open-source (e.g., HiGHS) or commercial (e.g., Gurobi or CPLEX) solvers. 
