@@ -1,4 +1,4 @@
-_your zenodo badge here_
+[![DOI](https://zenodo.org/badge/791057925.svg)](https://zenodo.org/doi/10.5281/zenodo.12693666)
 
 # akdemir-etal_2024_applied_energy
 
