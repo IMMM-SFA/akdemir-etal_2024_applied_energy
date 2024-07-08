@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+# import descartes
 import geopandas as gpd
 from shapely.geometry import Point, Polygon
 import matplotlib as mpl
@@ -349,7 +350,7 @@ ax[1,0].annotate('',(max_deficit_1_hour+0.12, CAISO_net_demand_all_year.groupby(
             arrowprops=dict(color='#000000', arrowstyle='<->', linewidth=1.5),
             fontsize=8)
 
-ax[1,0].text(0.835, 0.42, f"{round(max_deficit_1)}\nMWh\nDeficit",
+ax[1,0].text(0.835, 0.42, f"{round(max_deficit_1)}\nMWh\nDifference",
             ha="center", va="center",transform=ax[1,0].transAxes,size=8,color='black')
 
 ax[1,1].plot(range(0,24), CAISO_net_demand_local_hw.groupby([local_hw_duration_2059.hour]).mean(), color='#0173B2')
@@ -367,7 +368,7 @@ ax[1,1].annotate('',(max_deficit_2_hour+0.12, CAISO_net_demand_local_hw.groupby(
             arrowprops=dict(color='#000000', arrowstyle='<->', linewidth=1.5),
             fontsize=8)
 
-ax[1,1].text(0.835, 0.57, f"{round(max_deficit_2)}\nMWh\nDeficit",
+ax[1,1].text(0.835, 0.57, f"{round(max_deficit_2)}\nMWh\nDifference",
             ha="center", va="center",transform=ax[1,1].transAxes,size=8,color='black')
 
 ax[1,2].plot(range(0,24), CAISO_net_demand_wide_hw.groupby([wide_hw_duration_2059.hour]).mean(), color='#0173B2')
@@ -385,12 +386,12 @@ ax[1,2].annotate('',(max_deficit_3_hour+0.12, CAISO_net_demand_wide_hw.groupby([
             arrowprops=dict(color='#000000', arrowstyle='<->', linewidth=1.5),
             fontsize=8)
 
-ax[1,2].text(0.835, 0.35, f"{round(max_deficit_3)}\nMWh\nDeficit",
+ax[1,2].text(0.835, 0.35, f"{round(max_deficit_3)}\nMWh\nDifference",
             ha="center", va="center",transform=ax[1,2].transAxes,size=8,color='black')
 
 handles = []
 line1 = Line2D([0], [0], label='Net Demand', color='#0173B2')
-line2 = Line2D([0], [0], label='Imports', color='#DE8F05')
+line2 = Line2D([0], [0], label='Net Imports', color='#DE8F05')
 handles.extend([line1,line2])
 ax[1,0].legend(handles=handles, bbox_to_anchor=(0.453, 1), ncol=1, fontsize=8)
 
@@ -478,7 +479,7 @@ handles.extend([line1,line2,line3])
 ax[3,2].legend(handles=handles, bbox_to_anchor=(0.562, 1), ncol=1, fontsize=8)
 
 plt.tight_layout()
-plt.savefig('Interchange_trend.png', dpi=500, bbox_inches='tight')
+plt.savefig('Interchange_trend_2059.png', dpi=500, bbox_inches='tight')
 plt.show()
 plt.clf()
 

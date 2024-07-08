@@ -72,7 +72,7 @@ for gen in range(len(CERF_2055_gens)):
         all_colors.append('#CA9161')
         
     elif sp_type == 'Geothermal':
-        all_colors.append('#DE8F05')
+        all_colors.append('#808000')
 
     elif sp_type == 'Coal':
         all_colors.append('#949494')
@@ -134,7 +134,7 @@ ax.axis('off')
 legend_elements = [Line2D([0], [0], marker='o', color='w',markerfacecolor='#CA9161', label='Natural Gas', markersize=9),
                    Line2D([0], [0], marker='o', color='w',markerfacecolor='#949494', label='Coal', markersize=9),
                    Line2D([0], [0], marker='o', color='w',markerfacecolor='#000000', label='Oil', markersize=9),
-                   Line2D([0], [0], marker='o', color='w',markerfacecolor='#DE8F05', label='Geothermal', markersize=9),
+                   Line2D([0], [0], marker='o', color='w',markerfacecolor='#808000', label='Geothermal', markersize=9),
                    Line2D([0], [0], marker='o', color='w',markerfacecolor='#CC78BC', label='Biomass', markersize=9),
                    Line2D([0], [0], marker='o', color='w',markerfacecolor='#ECE133', label='Solar', markersize=9),
                    Line2D([0], [0], marker='o', color='w',markerfacecolor='#029E73', label='Wind', markersize=9),
@@ -187,7 +187,7 @@ for gen in range(len(CERF_2015_gens)):
         all_colors.append('#CA9161')
         
     elif sp_type == 'Geothermal':
-        all_colors.append('#DE8F05')
+        all_colors.append('#808000')
 
     elif sp_type == 'Coal':
         all_colors.append('#949494')
@@ -249,7 +249,7 @@ ax.axis('off')
 legend_elements = [Line2D([0], [0], marker='o', color='w',markerfacecolor='#CA9161', label='Natural Gas', markersize=9),
                    Line2D([0], [0], marker='o', color='w',markerfacecolor='#949494', label='Coal', markersize=9),
                    Line2D([0], [0], marker='o', color='w',markerfacecolor='#000000', label='Oil', markersize=9),
-                   Line2D([0], [0], marker='o', color='w',markerfacecolor='#DE8F05', label='Geothermal', markersize=9),
+                   Line2D([0], [0], marker='o', color='w',markerfacecolor='#808000', label='Geothermal', markersize=9),
                    Line2D([0], [0], marker='o', color='w',markerfacecolor='#CC78BC', label='Biomass', markersize=9),
                    Line2D([0], [0], marker='o', color='w',markerfacecolor='#ECE133', label='Solar', markersize=9),
                    Line2D([0], [0], marker='o', color='w',markerfacecolor='#029E73', label='Wind', markersize=9),
@@ -278,7 +278,7 @@ gen_cap_2055 = generators_all_2055.groupby('Type').sum()/1000
 
 #Creating dictionaries to store capacities and color/generator type lists
 cap_GW = {'2015': [], '2055': []}
-color_list = ['#CA9161','#DE8F05','#949494','#000000','#CC78BC','#ECE133','#029E73','#56B4E9','#0173B2','#D55E00']
+color_list = ['#CA9161','#808000','#949494','#000000','#CC78BC','#ECE133','#029E73','#56B4E9','#0173B2','#D55E00']
 gen_types = ['NG','Geothermal','Coal','Oil','Biomass','Solar','OnshoreWind','OffshoreWind','Hydro','Nuclear']
 
 for g in gen_types:

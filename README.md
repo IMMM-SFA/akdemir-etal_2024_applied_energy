@@ -62,13 +62,10 @@ Use the scripts found in the `figures` directory to reproduce the figures used i
 | 1 | `Heatwave_load_comparison.py`, `Heatwave_temperature_analysis.py` | Shows peak hourly temperature distributions and electricity demand time series during local and widespread heat waves |
 | 2 | `TPR_topology_map.py` | Shows 125 node topology of U.S. Western Interconnection and three transmission planning regions (TPRs) |
 | 3 | `Experiment_flowchart.pptx`, `Experiment_flowchart.png` | Shows the flowchart of experimental setup |
-| 4 | `LMP_ECDF_distribution.py` | Shows ECDF of LMPs for U.S. Western Interconnection and three TPRs in 2019 |
-| 5 | `Annual_genmix_WECC.py`, `TPR_demand_gen_barplot.py` | Shows annual generation mix of U.S. Western Interconnection and generation/demand under different scenarios for three TPRs in 2019 |
-| 6 | `Heatwave_outcomes_timeseries.py` | Shows LMPs and unserved energy during local and widespread heat waves under different scenarios in 2019 |
-| 7 | `Transmission_additions.py` | Shows transmission capacity additions under different scenarios between 2015 and 2055 |
-| 8 | `Generator_map_capacity_bubble.py` | Shows generator locations, capacities, and total capacity by generation type for 2015 and 2055 |
-| 9 | `LMP_ECDF_distribution.py` | Shows ECDF of LMPs for U.S. Western Interconnection and three TPRs in 2059 |
-| 10 | `Annual_genmix_WECC.py`, `TPR_demand_gen_barplot.py` | Shows annual generation mix of U.S. Western Interconnection and generation/demand under different scenarios for three TPRs in 2059 |
-| 11 | `Heatwave_outcomes_timeseries.py` | Shows LMPs and unserved energy during local and widespread heat waves under different scenarios in 2059 |
-| 12 | `Heatwave_maps_LMP.py` | Shows nodal average LMPs during local and widespread heat waves under different scenarios in 2059 |
-| 13 | `Power_flow_map.py` | Shows average interregional power flow as well as net demands, imports, solar/wind generation and curtailment, and LMP distributions during local and widespread heat waves and the whole year |
+| 4 | `Heatwave_outcomes_timeseries.py` | Shows LMPs and unserved energy during local and widespread heat waves under different scenarios in 2019 |
+| 5 | `Transmission_additions.py` | Shows transmission capacity additions under different scenarios between 2015 and 2055 |
+| 6 | `Generator_map_capacity_bubble.py` | Shows generator locations, capacities, and total capacity by generation type for 2015 and 2055 |
+| 7 | `LMP_ECDF_distribution.py` | Shows ECDF of LMPs for U.S. Western Interconnection and three TPRs in 2059 |
+| 8 | `Annual_genmix_WECC.py`, `TPR_demand_gen_barplot.py` | Shows annual generation mix of U.S. Western Interconnection and generation/demand under different scenarios for three TPRs in 2059 |
+| 9 | `Heatwave_outcomes_timeseries.py` | Shows LMPs and unserved energy during local and widespread heat waves under different scenarios in 2059 |
+| 10 | `Power_flow_map.py` | Shows average interregional power flow as well as net demands, imports, solar/wind generation and curtailment, and LMP distributions during local and widespread heat waves and the whole year |

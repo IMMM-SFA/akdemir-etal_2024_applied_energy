@@ -75,7 +75,7 @@ ax[0,0].plot(local_hw_duration_2019,All_2019_Intermediate.loc[local_hw_duration_
 ax[0,0].plot(local_hw_duration_2019,All_2019_Individual.loc[local_hw_duration_2019,'WECC_Weighted_LMP'], label='Individual Case', color='#D55E00')
 
 ax[0,0].set_ylabel('Hourly LMP ($/MWh)', weight='bold')
-ax[0,0].set_yticks([40,50,60,70,80,90,100,110])
+ax[0,0].set_yticks([40,60,80,100,120,140,160,180,200])
 
 ax[1,0].plot(local_hw_duration_2019,All_2019_Base.loc[local_hw_duration_2019,'WECC_Unserved_Energy'], label='Base Case', color='#0173B2')
 ax[1,0].plot(local_hw_duration_2019,All_2019_Cooperative.loc[local_hw_duration_2019,'WECC_Unserved_Energy'], label='Cooperative Case', color='#029E73')
@@ -85,20 +85,20 @@ ax[1,0].plot(local_hw_duration_2019,All_2019_Individual.loc[local_hw_duration_20
 ax[1,0].set_xticks(['2019-06-09 06:00:00','2019-06-09 18:00:00','2019-06-10 06:00:00','2019-06-10 18:00:00','2019-06-11 06:00:00','2019-06-11 18:00:00'])
 ax[1,0].set_xticklabels(['June 9\n6 AM','June 9\n6 PM','June 10\n6 AM','June 10\n6 PM','June 11\n6 AM','June 11\n6 PM'])
 ax[1,0].set_ylabel('Hourly Unserved Energy (MW)', weight='bold')
-ax[1,0].set_yticks([0,50,100,150,200,250,300,350,400])
+ax[1,0].set_yticks([0,200,400,600,800,1000,1200])
 
 colors = {"Base Case": "#0173B2", "Cooperative Case": "#029E73", "Intermediate Case": "#ECE133", "Individual Case": "#D55E00"}
 
 sns.boxplot(data=seaborn_data_2019_local, x="Case", y='LMP',ax=ax[0,1], palette=colors, legend=False)
 ax[0,1].set_ylabel('')
 ax[0,1].set_xlabel('')
-ax[0,1].set_yticks([40,50,60,70,80,90,100,110])
+ax[0,1].set_yticks([40,60,80,100,120,140,160,180,200])
 
 sns.boxplot(data=seaborn_data_2019_local, x="Case", y='Slack',ax=ax[1,1], palette=colors, legend=False)
 ax[1,1].set_ylabel('')
 ax[1,1].set_xticklabels(['Base\nCase','Coop.\nCase','Intr.\nCase','Indv.\nCase'])
 ax[1,1].set_xlabel('')
-ax[1,1].set_yticks([0,50,100,150,200,250,300,350,400])
+ax[1,1].set_yticks([0,200,400,600,800,1000,1200])
 
 handles = []
 line1 = Line2D([0], [0], label='Base Case', color='#0173B2')
@@ -106,7 +106,7 @@ line2 = Line2D([0], [0], label='Cooperative Case', color='#029E73')
 line3 = Line2D([0], [0], label='Intermediate Case', color='#ECE133')
 line4 = Line2D([0], [0], label='Individual Case', color='#D55E00')
 handles.extend([line1,line2,line3,line4])
-fig.legend(handles=handles,loc='center left', bbox_to_anchor=(0.075, 0.43), ncol=1, fontsize=15)
+fig.legend(handles=handles,loc='center left', bbox_to_anchor=(0.083, 0.43), ncol=1, fontsize=15)
 
 plt.tight_layout()
 plt.savefig('2019_local_heatwave_timeseries.png', dpi=400, bbox_inches='tight')
@@ -166,7 +166,7 @@ line2 = Line2D([0], [0], label='Cooperative Case', color='#029E73')
 line3 = Line2D([0], [0], label='Intermediate Case', color='#ECE133')
 line4 = Line2D([0], [0], label='Individual Case', color='#D55E00')
 handles.extend([line1,line2,line3,line4])
-fig.legend(handles=handles,loc='center left', bbox_to_anchor=(0.08, 0.43), ncol=1, fontsize=15)
+fig.legend(handles=handles,loc='center left', bbox_to_anchor=(0.083, 0.43), ncol=1, fontsize=15)
 
 plt.tight_layout()
 plt.savefig('2019_widespread_heatwave_timeseries.png', dpi=400, bbox_inches='tight')
