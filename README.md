@@ -2,21 +2,21 @@ _your zenodo badge here_
 
 # akdemir-etal_2024_applied_energy
 
-**Investigating the Effects of Cooperation Level in Transmission Expansion Planning for Decarbonization**
+**Investigating the Effects of Cooperation Level on Transmission Expansion Planning for Decarbonization**
 
-Kerem Ziya Akdemir<sup>1\*</sup>, Kendall Mongird<sup>2</sup>, Jordan D. Kern<sup>1</sup>, Konstantinos Oikonomou<sup>2</sup>, Nathalie Voisin<sup>2,3</sup>, Casey D. Burleyson<sup>2</sup>, Jennie S. Rice<sup>2</sup>, Mengqi Zhao<sup>2</sup>, Cameron Bracken<sup>2</sup>, and Chris Vernon<sup>2</sup>
+Kerem Ziya Akdemir<sup>1\*</sup>, Kendall Mongird<sup>1</sup>, Jordan D. Kern<sup>2</sup>, Konstantinos Oikonomou<sup>1</sup>, Nathalie Voisin<sup>1,3</sup>, Casey D. Burleyson<sup>1</sup>, Jennie S. Rice<sup>1</sup>, Mengqi Zhao<sup>1</sup>, Cameron Bracken<sup>1</sup>, and Chris Vernon<sup>1</sup>
 
-<sup>1 </sup> North Carolina State University, Raleigh, NC, USA   
-<sup>2 </sup> Pacific Northwest National Laboratory, Richland, WA, USA  
+<sup>1 </sup> Pacific Northwest National Laboratory, Richland, WA, USA  
+<sup>2 </sup> North Carolina State University, Raleigh, NC, USA 
 <sup>3 </sup> University of Washington, Seattle, WA, USA
 
-\* corresponding author: kakdemi@ncsu.edu
+\* corresponding author: keremziya.akdemir@pnnl.gov
 
 ## Abstract
-Electricity grids around the world are undergoing significant transformation due to decarbonization and sectoral electrification efforts. There is a significant need for new transmission lines to connect renewable energy sources like solar and wind power, but institutional and economic challenges hinder the necessary actions. This study examines the potential impact of cooperation in transmission expansion planning, using an advanced modeling chain to simulate power grid operations of Western Interconnection in 2019 and 2059 under different levels of collaboration between transmission planning regions. Also, two historical heat waves with varying spatial scope (local vs. widespread) in 2019 are replayed under future climate change in 2059 to assess the transmission cooperation benefits. The results show that cooperative transmission planning yields the best outcomes in terms of reducing wholesale electricity prices and minimizing energy outages both for the whole interconnection and individual transmission planning regions. It also helps decrease greenhouse gas emissions by reducing reliance on fossil fuel resources and/or increasing renewable energy utilization. However, the benefits of transmission cooperation diminish during widespread heat waves when all regions face extreme electricity demand due to space cooling needs. Despite this, cooperative transmission planning remains advantageous, particularly for California Independent System Operator (CAISO) with significant solar installations. The study suggests that cooperation in transmission planning is crucial for reducing costs and increasing reliability both during normal periods and extreme weather events. Furthermore, it highlights the importance of strategic storage investment optimization to mitigate challenges posed by wider-scale extreme weather events of the future.
+Electricity grids around the world are undergoing significant transformation due to decarbonization and sectoral electrification efforts. There is a significant need for new transmission capacity to connect renewable energy resources like solar and wind power, but institutional and economic challenges hinder the efficiency and speed of the new transmission investments. This study examines the potential impact of cooperation on transmission expansion planning using an advanced modeling chain to simulate power grid operations of the United States Western Interconnection in 2019 and 2059 under different levels of collaboration between transmission planning regions. Two historical heat waves in 2019 with varying spatial scope (one localized and one more widespread) are replayed under future climate change in 2059 to assess the transmission cooperation benefits during grid stress. The results show that cooperative transmission planning yields the best outcomes in terms of reducing wholesale electricity prices and minimizing energy outages both for the whole interconnection and individual transmission planning regions. Compared to individual case, cooperative transmission expansion planning reduces wholesale electricity prices by 64.3% and interconnection-wide total costs (transmission investments + grid operations) by 34.6% in 2059. It also helps decrease greenhouse gas emissions by reducing reliance on fossil fuel resources and increasing renewable energy utilization. However, the benefits of transmission cooperation diminish during the widespread heat wave when all regions face extreme electricity demand due to higher space cooling needs. Despite this, cooperative transmission planning remains advantageous, particularly for California Independent System Operator which has significant solar installations. This study suggests that cooperation in transmission planning is crucial for reducing costs and increasing reliability both during normal periods and extreme weather events. It highlights the importance of optimizing the strategic investments to mitigate challenges posed by wider-scale extreme weather events of the future.
 
 ## Journal reference
-Akdemir, K. Z., Mongird, K., Kern, J. D., Oikonomou, K., Voisin, N., Burleyson, C. D., Rice, J. S., Zhao, M., Bracken, C., & Vernon, C. (2024). Investigating the Effects of Cooperation Level in Transmission Expansion Planning for Decarbonization. Applied Energy (in preparation)
+Akdemir, K. Z., Mongird, K., Kern, J. D., Oikonomou, K., Voisin, N., Burleyson, C. D., Rice, J. S., Zhao, M., Bracken, C., & Vernon, C. (2024). Investigating the Effects of Cooperation Level on Transmission Expansion Planning for Decarbonization. Applied Energy (in preparation)
 
 ## Code reference
 Akdemir, K. Z., Mongird, K., Kern, J. D., Oikonomou, K., Voisin, N., Burleyson, C. D., Rice, J. S., Zhao, M., Bracken, C., & Vernon, C. (2024). Supporting code for Akdemir et al. 2024 - Applied Energy [Code]. Zenodo.
@@ -38,7 +38,7 @@ Akdemir, K. Z., Mongird, K., Kern, J. D., Oikonomou, K., Voisin, N., Burleyson, 
 |-------|---------|-----------------|-----|
 | GO WEST | v1.1.0 | https://github.com/IMMM-SFA/IM3_WECC/tree/Experiment_Version | https://doi.org/10.5281/zenodo.11003229 |
 | TEP | v1.0.0 | https://github.com/keremakdemir/Transmission_Expansion_Planner | https://doi.org/10.5281/zenodo.11003185 |
-| GCAM-USA | v5.3 | https://github.com/JGCRI/gcam-core | https://doi.org/10.57931/1960381 |
+| GCAM-USA | v5.3 | https://github.com/JGCRI/gcam-core | https://doi.org/10.5281/zenodo.3908600 |
 | TELL | v1.1.0 | https://github.com/IMMM-SFA/tell | https://doi.org/10.5281/zenodo.8264217 |
 | CERF | v2.3.2 | https://github.com/IMMM-SFA/cerf | https://doi.org/10.5281/zenodo.7735212 |
 | reV | v0.8.7 | https://github.com/NREL/reV | https://doi.org/10.5281/zenodo.10794962 |
