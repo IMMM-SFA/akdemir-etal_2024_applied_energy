@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/791057925.svg)](https://zenodo.org/doi/10.5281/zenodo.12693666)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14193520.svg)](https://doi.org/10.5281/zenodo.14193520)
 
 # akdemir-etal_2024_applied_energy
 
@@ -19,7 +19,7 @@ There is growing recognition of the advantages of interregional transmission cap
 Akdemir, K. Z., Mongird, K., Kern, J. D., Oikonomou, K., Voisin, N., Burleyson, C. D., Rice, J. S., Zhao, M., Bracken, C., & Vernon, C. (2025). Investigating the effects of cooperative transmission expansion planning on grid performance during heat waves with varying spatial scales. Applied Energy, 378, 124825. https://doi.org/10.1016/j.apenergy.2024.124825
 
 ## Code reference
-Akdemir, K. Z., Mongird, K., Kern, J., Oikonomou, K., Voisin, N., Burleyson, C., Rice, J., Zhao, M., Bracken, C., & Vernon, C. R. (2024). Meta-repository for data and code associated with the Akdemir et al. 2024 submission to Applied Energy (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/ZENODO.12693667
+Akdemir, K. Z., Mongird, K., Kern, J., Oikonomou, K., Voisin, N., Burleyson, C., Rice, J., Zhao, M., Bracken, C., & Vernon, C. R. (2024). Meta-repository for data and code associated with the Akdemir et al. 2024 submission to Applied Energy (Version 1.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.14193520
 
 ## Data references
 
